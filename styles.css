@@ -1,11 +1,10 @@
-body
+body 
 {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	background-color: #f4f4f4;
-
+	background-color: #444;
 }
 
 header 
@@ -21,26 +20,40 @@ nav ul
 	background: #444;
 	padding: 0;
 	text-align: center;
+	margin: 0;
+	list-style-type: none;
 }
 
 nav ul li 
 {
-	display: inline;
-	margin: 0 15px;
+	display: inline-block;
+	margin: 0 20px;
 }
 
 nav ul li a 
 {
 	color: #fff;
 	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px; /* here is where we set the base font size for the clickable options */
+	transition: color 0.9s ease, transform 0.5s ease;  color and scale transition 
+
+}
+
+/* Adding the hover color change effect */
+nav ul li a:hover 
+{
+		color: #00ff21;
 }
 
 section 
 {
-	margin: 20px;
+	margin: 40px 20px;
 	padding: 20px;
-	background: #fff;
+	background: #000000;
+	color: #fff;
 	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer 
@@ -49,5 +62,7 @@ footer
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
-	margin-top: 20px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
